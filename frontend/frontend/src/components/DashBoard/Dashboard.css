@@ -1,0 +1,74 @@
+html,
+body {
+  position: relative;
+  min-height: 100vh;
+  background-color: #E1E8EE;
+
+  align-items: center;
+  justify-content: center;
+  font-family: "Fira Sans", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+}
+
+.navbar {
+  background-color: #6B92A4;
+  /* Blue-greyish background */
+  color: white;
+  padding: 10px 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-brand a {
+  color: white;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.navbar-links a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  background-color: #50E3C2;
+  /* Light green background */
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  margin-left: 10px;
+}
+
+.navbar-links-right {
+  margin-left: auto;
+  /* Pushes the profile and login buttons to the right */
+}
+
+.navbar-links a:first-child {
+  margin-left: 0;
+  /* Remove margin from the first button */
+}
+
+.dashboard-content {
+  padding: 20px;
+  text-align: center;
+  background-color: #F5F7FA;
+  /* Light grey background */
+  min-height: calc(100vh - 60px);
+  /* Full viewport height minus navbar height */
+}
+
+.dashboard-content h1 {
+  font-size: 2.5em;
+  color: #333;
+  margin-top: 20px;
+}
